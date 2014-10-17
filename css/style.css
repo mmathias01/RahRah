@@ -182,7 +182,7 @@ dl.img-box.t1>dt{
 /*===== header =====*/
 header h1{
 	position:absolute;
-	left:360px;
+	left:290px;
 	top:100px;
 	top:6%;
 }
@@ -334,7 +334,7 @@ header h1 .desc .sndln{
 	font:10px/15px Arial, Helvetica, sans-serif;
 	text-transform:uppercase;
 	color:#dcdcdc;
-	
+
 }
 
 #content h2{
@@ -485,4 +485,9 @@ a.jScrollArrowDown:hover {
 }
 a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
 	/*background-color: #f00;*/
+}
+
+.need {
+	/*background-color: yellow;
+	color: black;*/
 }
