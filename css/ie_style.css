@@ -1,0 +1,10 @@
+.extra-wrap {zoom:1;}
+
+a.nocolor,.nocolor a{
+	//color:expression(this.parentNode.currentStyle.color);
+}
+
+#content .content,#form1 label{
+	behavior:url(js/PIE.htc);
+	z-index:1;
+}

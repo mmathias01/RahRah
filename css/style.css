@@ -1,0 +1,488 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, details, figcaption, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, summary, time {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, output, section, summary{
+	display:block;
+}
+meter,progress,mark, time{
+	display:inline;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+html, body {
+	height:100%;
+}
+html {
+	min-width:980px;
+}
+body {
+	background:#0f0f0f url(../images/body-bg.png) center 0 no-repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:100%;
+	line-height:1em;
+	color:#000;
+}
+img {
+	border:0;
+	vertical-align:top;
+	text-align:left;
+}
+object {
+	vertical-align:top;
+	outline:none;
+}
+ul, ol {
+	list-style:none;
+}
+table, table td {
+	padding:0;
+	border:none;
+	border-collapse:collapse;
+}
+.fleft {
+	float:left;
+}
+.fright {
+	float:right;
+}
+.clear {
+	clear:both;
+}
+.col-1, .col-2, .col-3 {
+	float:left;
+}
+.alignright {
+	text-align:right;
+}
+.aligncenter {
+	text-align:center;
+}
+.wrapper {
+	width:100%;
+	overflow:hidden;
+}
+.container {
+	width:100%;
+}
+a.und, .und a {
+	text-decoration:none;
+}
+a.und:hover, .und a:hover {
+	text-decoration:underline;
+}
+.nocolor, .nocolor a{
+	color:inherit;
+}
+/*==== GLOBAL =====*/
+#main {
+	width:1010px;
+	margin:0 auto;
+	font-size:.75em;
+	position:relative;
+	height:100%;
+	left:-10px;
+}
+
+/*----- forms parameters -----*/
+
+input, select, textarea {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+	vertical-align:middle;
+	font-weight:normal;
+	margin:0;
+}
+
+textarea{
+	overflow:auto;
+}
+/*----- other -----*/
+
+.list a{
+	background:url(../images/marker1.png) left center no-repeat;
+	padding-left:12px;
+	line-height:22px;
+}
+
+a.more{
+	font:20px/1.2em Arial, Helvetica, sans-serif;
+	color:#cdcdcd;
+	text-decoration:none;
+}
+
+a.more:hover{
+	color:#fff;
+}
+
+.extra-wrap {
+	overflow:hidden;
+}
+p {
+	margin-bottom:15px;
+}
+.p1 {
+	margin-bottom:8px;
+}
+.p2 {
+	margin-bottom:15px;
+}
+.p3 {
+	margin-bottom:22px;
+}
+
+.dark{
+	color:#838383;
+}
+
+.light{
+	color:#dcdcdc;
+}
+/*----- txt, links, lines, titles -----*/
+a {
+	color:#dcdcdc;
+	outline:none;
+}
+a:hover {
+	text-decoration:none;
+}
+/*==================boxes====================*/
+
+dl.address dd {
+	text-align:right;
+	clear:both;
+	width:180px;
+}
+dl.address dd span {
+	float:left;
+}
+dl.img-box,.img-box-set dl {
+	overflow:hidden;
+}
+dl.img-box dt ,.img-box-set dl dt{
+	float:left;
+}
+dl.img-box dd ,.img-box-set dl dd{
+	overflow:hidden;
+}
+
+dl.img-box.t1>dt{
+	margin-right:30px;
+}
+
+/*===== header =====*/
+header h1{
+	position:absolute;
+	left:360px;
+	top:100px;
+	top:6%;
+}
+
+header h1 a{
+	font:72px/1.2em Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:none;
+}
+
+header h1 .desc{
+	font:24px/1.2em Arial, Helvetica, sans-serif;
+	color:#828282;
+	text-transform:uppercase;
+	position:absolute;
+	left:24px;
+	top:104px;
+}
+
+header h1 .desc .sndln{
+	color:#424242;
+	position:relative;
+	top:-8px;
+}
+/*===== content =====*/
+#content{
+	position:absolute;
+	left:300px;
+	top:277px;
+	top:12%;
+	margin-top:150px;
+	overflow:hidden;
+	height:496px;
+	padding:0 20px;
+}
+
+#content>dd,#content>dt{
+	float:left;
+	margin:0 1px 0 0;
+	height:459px;
+	position:relative;
+}
+
+#content>dt{
+	z-index:5;
+	width:59px;
+	background:url(../images/nav-sprite.png) no-repeat;
+}
+
+#content dt>.shadow{
+	position:absolute;
+	bottom:-36px;
+	left:-20px;
+}
+
+#content>dd{
+	width:661px;
+	overflow:hidden;
+	position:relative;
+	z-index:1;
+	display:none;
+}
+
+#content>dt a{
+	width:59px;
+	height:459px;
+	background:url(../images/nav-sprite.png) no-repeat;
+	display:block;
+}
+
+#content>.dt1{background-position:0 0;}
+#content>.dt1 a{background-position:0 -459px;}
+#content>.dt2{background-position:-60px 0;}
+#content>.dt2 a{background-position:-60px -459px;}
+#content>.dt3{background-position:-120px 0;}
+#content>.dt3 a{background-position:-120px -459px;}
+#content>.dt4{background-position:-180px 0;}
+#content>.dt4 a{background-position:-180px -459px;}
+#content>.dt5{background-position:-240px 0;}
+#content>.dt5 a{background-position:-240px -459px;}
+
+#content .inner{
+	width:725px;
+	height:459px;
+	margin:0 -32px;
+	overflow:hidden;
+	position:relative;
+	z-index:1;
+}
+
+#content #page1 .inner{
+	background:url(../images/content-bg1.png) no-repeat;
+}
+#content #page2 .inner{
+	background:url(../images/content-bg2.png) no-repeat;
+}
+#content #page3 .inner{
+	background:url(../images/content-bg3.png) no-repeat;
+}
+#content #page4 .inner{
+	background:url(../images/content-bg4.png) no-repeat;
+}
+#content #page5 .inner{
+	background:url(../images/content-bg5.png) -32px 0 no-repeat;
+}
+
+#content #privacy .inner{
+	background:url(../images/content-bg2.png) -32px 0 no-repeat;
+}
+
+#page1 img{
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:0;
+}
+
+#page1 .prev{
+	width:26px;
+	height:104px;
+	background:url(../images/prevnext-sprite.png) 0 0 no-repeat;
+	display:block;
+	position:absolute;
+	z-index:10;
+	left:51px;
+	top:176px;
+}
+#page1 .next{
+	width:26px;
+	height:104px;
+	background:url(../images/prevnext-sprite.png) 100% 0 no-repeat;
+	display:block;
+	position:absolute;
+	z-index:10;
+	right:51px;
+	top:176px;
+}
+
+#content .content{
+	padding:35px 45px;
+	width:537px;
+	height:350px;
+	background:url(../images/content-bg.png);
+	position:absolute;
+	left:47px;
+	top:18px;
+	-moz-border-radius:12px;
+	border-radius:12px;
+	font:10px/15px Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#dcdcdc;
+	
+}
+
+#content h2{
+	font:30px/1.2em Arial, Helvetica, sans-serif;
+	color:#cdcdcd;
+	text-transform:uppercase;
+	margin-bottom:18px;
+}
+
+#content .border-bottom{
+	border-bottom:1px #272727 solid;
+	margin-bottom:24px;
+	padding-bottom:24px;
+}
+
+#pic{
+	float:left;
+	position:relative;
+	margin-right:9px;
+}
+
+#thumbs{
+	width:170px;
+	height:300px;
+	float:left;
+}
+
+#thumbs li{
+	display:block;
+	margin-bottom:6px;
+}
+
+/*===== footer =====*/
+footer{
+	height:40px;
+	width:100%;
+	position:absolute;
+	top:840px;
+	top:12%;
+	margin-top:720px;
+	text-align:center;
+}
+
+footer .privacy{
+	font:10px Arial, Helvetica, sans-serif;
+	color:#3d3d3d;
+	text-transform:uppercase;
+	margin-left:-80px;
+}
+
+
+/*----- forms -----*/
+
+#form1 label{
+	width:203px;
+	background:#252525;
+	float:left;
+	-moz-border-radius:12px;
+	border-radius:12px;
+	margin-bottom:8px;
+}
+
+#form1 input,#form1 textarea{
+	border:none;
+	background: url(../images/blank.png);
+	font:10px Arial, Helvetica, sans-serif;
+	color:#838383;
+	text-transform:uppercase;
+	width:183px;
+	margin:0;
+	padding:10px;
+}
+
+#form1 textarea{
+	height:156px;
+}
+
+#form1 .btns{
+	float:right;
+}
+
+#form1 .btns a{
+	margin-left:12px;
+}
+
+/*==========================================*/
+/*==========================================*/
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	height: 100%;
+	background: url(../images/track-bg.png) no-repeat;
+}
+.jScrollPaneDrag {
+	position: absolute;
+	background: url(../images/shattle.png) no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+}
+.jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+a.jScrollArrowUp {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+}
+a.jScrollArrowUp:hover {
+	/*background-color: #f60;*/
+}
+
+a.jScrollArrowDown {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+}
+a.jScrollArrowDown:hover {
+	/*background-color: #f60;*/
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	/*background-color: #f00;*/
+}
