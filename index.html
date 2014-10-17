@@ -22,8 +22,8 @@
 <div id="main">
   <!-- header -->
   <header>
-    <h1><a href="index.html">Charm</a><span class="desc">professional<br>
-      <span class="sndln">hair salon</span></span></h1>
+    <h1><a href="index.html">Deborah Flook</a><span class="desc">professional<br>
+      <span class="sndln">hair stylist</span></span></h1>
   </header>
   <!-- content -->
   <dl id="content">
@@ -36,9 +36,9 @@
       <div class="inner">
         <div class="content">
           <h2>welcome</h2>
-          <p class="border-bottom">Welcome to our salon! We take pride in providing the latest styles and techniques 
-            in hair cuts, hair color, makeup, bridal services and facial waxing. We are proud to be an 
-            Aveda Concept Hair Salon offering the complete line of Aveda hair care, skin care, 
+          <p class="border-bottom">Welcome to our salon! We take pride in providing the latest styles and techniques
+            in hair cuts, hair color, makeup, bridal services and facial waxing. We are proud to be an
+            Aveda Concept Hair Salon offering the complete line of Aveda hair care, skin care,
             makeup, body care, and environmental air care products. </p>
           <dl class="img-box t1">
             <dt><img src="images/page1-img1.png" alt=""></dt>
@@ -57,7 +57,7 @@
           <section class="col-1">
             <h2>our services</h2>
             <p>Vestibulum sed ante sagittis.</p>
-            <p class="dark">euismod consequat ante. Lorem ipsum dolor 
+            <p class="dark">euismod consequat ante. Lorem ipsum dolor
               sit amet, consectetuer adipiscing elit. Pel
               lentesque sed dolor. Aliquam congue fermentum unnisl.Mauris accumsan nulla.</p>
             <img src="images/page2-img1.png" alt="" class="p2"> <a href="#" class="more">view more</a> </section>
@@ -162,7 +162,7 @@ $(window).load(function(){
 	   scrollbarWidth:28,
 	   dragMaxHeight:82
     })
-	 
+
 	 $('#thumbs li a').live('click',function(){
 		$('#pic').attr('src',$(this).attr('href')).bind('load',function(){
 			$(this).css({opacity:0}).stop().animate({opacity:1})
@@ -172,7 +172,7 @@ $(window).load(function(){
 		var tmp=new Image()
 		tmp.src=this.href
 	})
-	 
+
 	 $('#content>dd').css({display:'none'})
 })
 $(function(){
@@ -197,17 +197,17 @@ $(function(){
 		}})
 		return false
 	})
-	
+
 	$('.active a,#content.nav_block').live('click',function(){
 		return false
 	})
-		
+
 	var imgs=[]
 	$('#page1 img').each(function(){
 		imgs.push(this)
 	})
 	$(imgs[0]).siblings('img').css({opacity:0})
-	
+
 	$('#page1 a.prev,#page1 a.next').css({opacity:0}).live('click',function(){
 		var img,pr=$(imgs[0])
 		if($(this).hasClass('next'))
@@ -220,11 +220,11 @@ $(function(){
 		}})
 		return false
 	})
-	
+
 	$('#page1 .inner')
 		.live('mouseover',function(){$('a.prev,a.next',this).stop().animate({opacity:1})})
 		.live('mouseout',function(){$('a.prev,a.next',this).stop().animate({opacity:0})})
-	
+
 	$('#content>dt>a:not(.active)').css({opacity:0})
 	.live('mouseover',function(){
 		$(this).stop().animate({opacity:1})
