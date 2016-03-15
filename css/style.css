@@ -353,7 +353,7 @@ header h1 .desc .sndln{
 #pic{
 	float:left;
 	position:relative;
-	margin-right:9px;
+	/*margin-right:9px;*/
 }
 
 #thumbs{
